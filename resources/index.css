@@ -1,0 +1,143 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    color: #222;
+    margin: 20px;
+    user-select: none;
+}
+#add{
+    width: 100px;
+    height: 29px;
+    color: #606060;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 24px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    border: 1.5px solid #ddd;
+    overflow: hidden;
+}
+#add:hover{
+    background-color: #eaeaea;
+}
+#add:active{
+    background-color: #e5e5e5;
+}
+input{
+    margin: 8px;
+    border-radius: 6px;
+    height: 25px;
+    box-shadow: inset 0px 1px 0px 0px #2222220a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    border: #22222222 solid 1px;
+}
+#addipt{
+    width: 200px;
+}
+input:focus{
+    outline: 2px solid #0969da;
+}
+#fetch{
+    width: 50px;
+    height: 27px;
+    background-color: #1f883d;
+    border: #22222222 solid 1px;
+    margin: 8px 8px 8px 0;
+    float: right;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+#fetch:hover{
+    background-color: #1b7835;
+}
+#fetch:active{
+    box-shadow: inset 0px 1px 0px 0px #2222220a;
+    background-color: #196e31;
+}
+#addbtn{
+    display: none;
+}
+#plus{
+    font-weight: 200;
+}
+.loadingDot{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.list{
+    width: 725px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 0 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+#scroll{
+    overflow-x: scroll;
+    margin-bottom: 16px;
+}
+#top{
+    width: calc(100% - 40px);
+    background-color: #fff;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+#gap{
+    height: 45px;
+    transition: all 0.3s ease;
+}
+#top:hover{
+    height: 130px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+#top:hover ~ #gap{
+    height: 115px;
+}
+#mode, #period{
+    border-radius: 6px;
+    border: solid 1px #ddd;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+    padding: 5px 15px;
+    color: #666;
+    margin-right: 16px;
+    display: inline-block;
+}
+#mode:hover, #period:hover{
+    background-color: #eaeaea;
+}
+#mode:active, #period:active{
+    background-color: #e5e5e5;
+}
+.listB{
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 0 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+.year{
+    width: 18px;
+    margin: 0;
+    height: 14px;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
